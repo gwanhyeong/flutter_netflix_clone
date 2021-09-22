@@ -3,6 +3,7 @@ import 'package:flutter_netflix_clone/widget/blur_image.dart';
 import 'package:flutter_netflix_clone/widget/category_menu.dart';
 import 'package:flutter_netflix_clone/widget/custom_bottom_navigation_bar.dart';
 import 'package:flutter_netflix_clone/widget/custom_header.dart';
+import 'package:flutter_netflix_clone/widget/video_context_menu.dart';
 import 'package:flutter_netflix_clone/widget/video_tag.dart';
 
 void main() {
@@ -66,6 +67,11 @@ class MyApp extends StatelessWidget {
                     ),
                   ],
                 ),
+              ),
+              const VideoContextMenu(),
+              Container(
+                color: Colors.black,
+                height: 280,
               ),
             ],
           ),

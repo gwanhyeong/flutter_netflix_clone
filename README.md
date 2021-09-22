@@ -1,14 +1,8 @@
 # flutter_netflix_clone
 
-## Getting Started
+플러터 공부를 시작하며, 넷플릭스 안드로이드 앱 첫 화면 UI를 따라그려보았습니다.
 
-This project is a starting point for a Flutter application.
+| 기존 앱 화면 (android)                                       | flutter clone                                                |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| <img src="android_screenshot.jpg" alt="netflix android app" width="400"> | <img src="flutter_screenshot.png" alt="flutter app" width="400"> |
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_netflix_clone/widget/custom_app_bar.dart';
+import 'package:flutter_netflix_clone/widget/blur_image.dart';
+import 'package:flutter_netflix_clone/widget/category_menu.dart';
 import 'package:flutter_netflix_clone/widget/custom_bottom_navigation_bar.dart';
+import 'package:flutter_netflix_clone/widget/custom_header.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,10 +34,29 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Netflix Clone',
       home: Scaffold(
-        appBar: const CustomAppBar(),
-        extendBodyBehindAppBar: true, // body height에 AppBar height도 포함시킴
-        body: Container(
-          color: Colors.black,
+        body: SingleChildScrollView(
+          child: Column(
+            children: [
+              AspectRatio(
+                aspectRatio: 1 / 1.2,
+                child: Stack(
+                  children: [
+                    const BlurImage(assetName: 'assets/poster.jpg'),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(16.0, 48.0, 16.0, 0),
+                      child: Column(
+                        children: const [
+                          CustomHeader(),
+                          SizedBox(height: 8),
+                          CategoryMenu(),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
         bottomNavigationBar: const CustomBottomNavigationBar(
           items: menuItems,

@@ -3,6 +3,7 @@ import 'package:flutter_netflix_clone/widget/blur_image.dart';
 import 'package:flutter_netflix_clone/widget/category_menu.dart';
 import 'package:flutter_netflix_clone/widget/custom_bottom_navigation_bar.dart';
 import 'package:flutter_netflix_clone/widget/custom_header.dart';
+import 'package:flutter_netflix_clone/widget/video_tag.dart';
 
 void main() {
   runApp(const MyApp());
@@ -49,6 +50,17 @@ class MyApp extends StatelessWidget {
                           CustomHeader(),
                           SizedBox(height: 8),
                           CategoryMenu(),
+                          Spacer(),
+                          VideoTag(
+                            tags: [
+                              '긴장감 넘치는',
+                              '스릴러',
+                              '괴생명체',
+                              '생존',
+                              '공포',
+                            ],
+                          ),
+                          SizedBox(height: 8),
                         ],
                       ),
                     ),

@@ -6,7 +6,10 @@ class VideoContextMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.black,
+      decoration: BoxDecoration(
+        border: Border.all(width: 0, color: Colors.black),
+        color: Colors.black,
+      ),
       height: 64,
       child: Row(
         children: [

@@ -34,13 +34,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Netflix Clone',
       home: Scaffold(
         body: SingleChildScrollView(
           child: Column(
             children: [
               AspectRatio(
-                aspectRatio: 1 / 1.2,
+                aspectRatio: 1 / 1.28,
                 child: Stack(
                   children: [
                     const BlurImage(assetName: 'assets/poster.jpg'),
@@ -70,7 +71,10 @@ class MyApp extends StatelessWidget {
               ),
               const VideoContextMenu(),
               Container(
-                color: Colors.black,
+                decoration: BoxDecoration(
+                  border: Border.all(width: 0, color: Colors.black),
+                  color: Colors.black,
+                ),
                 height: 280,
               ),
             ],

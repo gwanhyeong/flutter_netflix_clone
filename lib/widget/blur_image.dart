@@ -10,6 +10,7 @@ class BlurImage extends StatelessWidget {
       children: [
         Container(
           decoration: BoxDecoration(
+            border: Border.all(width: 0, color: Colors.black),
             image: DecorationImage(
               image: AssetImage(assetName),
               fit: BoxFit.fill,
